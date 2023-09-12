@@ -1,0 +1,3 @@
+1. Number (Decimal)
+2. One can be edited by a user and the other just displays the text to the user
+3. Our UI is useless

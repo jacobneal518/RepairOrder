@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Work Order Project</string>
+    <string name="labor">Labor</string>
+    <string name="parts">Parts</string>
+    <string name="paint">Paint</string>
+    <string name="inspection">Inspection</string>
+    <string name="technician">Technician</string>
+    <string name="work_order">Work Order</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="tax">Tax:</string>
+    <string name="total">Total:</string>
 </resources>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="384dp"
-        android:text="Labor"
+        android:text="@string/labor"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextText3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="320dp"
-        android:text="Parts"
+        android:text="@string/parts"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextText3"
         app:layout_constraintHorizontal_bias="0.028"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="252dp"
-        android:text="Paint"
+        android:text="@string/paint"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextText3"
         app:layout_constraintHorizontal_bias="0.143"
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="192dp"
-        android:text="Inspection"
+        android:text="@string/inspection"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextText3"
         app:layout_constraintHorizontal_bias="0.013"
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="128dp"
-        android:text="Technician"
+        android:text="@string/technician"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextText3"
         app:layout_constraintHorizontal_bias="0.013"
@@ -150,7 +150,7 @@
         android:layout_marginStart="170dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="171dp"
-        android:text="Work Order"
+        android:text="@string/work_order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -197,7 +197,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="Subtotal:"
+        android:text="@string/subtotal"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal"
         tools:layout_editor_absoluteY="722dp" />
 
@@ -205,7 +205,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tax:"
+        android:text="@string/tax"
         tools:layout_editor_absoluteX="205dp"
         tools:layout_editor_absoluteY="767dp" />
 
@@ -232,7 +232,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total:"
+        android:text="@string/total"
         tools:layout_editor_absoluteX="196dp"
         tools:layout_editor_absoluteY="822dp" />
 
