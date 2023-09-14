@@ -12,17 +12,25 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="35dp"
         android:text="@string/labor"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="252dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText8"
+        android:id="@+id/laborInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -40,16 +48,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="316dp"
         android:text="@string/parts"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
-        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintEnd_toStartOf="@+id/orderTypeInput"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/partsInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -70,13 +78,13 @@
         android:layout_marginTop="252dp"
         android:text="@string/paint"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintEnd_toStartOf="@+id/orderTypeInput"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/paintInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -97,13 +105,13 @@
         android:layout_marginTop="192dp"
         android:text="@string/inspection"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintEnd_toStartOf="@+id/orderTypeInput"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/inspectionInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -124,13 +132,13 @@
         android:layout_marginTop="128dp"
         android:text="@string/technician"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintEnd_toStartOf="@+id/orderTypeInput"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/technicianInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -156,7 +164,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/orderTypeInput"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
@@ -176,64 +184,72 @@
         android:layout_marginTop="56dp"
         android:text="Order Type"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintEnd_toStartOf="@+id/orderTypeInput"
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/subtotalOutput"
         android:layout_width="105dp"
         android:layout_height="42dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintBottom_toTopOf="@+id/taxOutput"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="@string/subtotal"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal"
-        tools:layout_editor_absoluteY="722dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/tax"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="767dp" />
+        app:layout_constraintEnd_toStartOf="@+id/taxOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
-        android:layout_width="107dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal3"
-        tools:layout_editor_absoluteX="266dp" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal3"
+        android:id="@+id/totalOutput"
         android:layout_width="105dp"
-        android:layout_height="31dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="815dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/taxOutput"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/totalOutput"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="55dp"
         android:text="@string/total"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="822dp" />
+        app:layout_constraintEnd_toStartOf="@+id/totalOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="494dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/subtotal"
+        app:layout_constraintEnd_toStartOf="@+id/subtotalOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
